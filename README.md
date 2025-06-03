@@ -11,9 +11,7 @@
 - [Technologies utilisées](#technologies-utilisées)
 - [Fonctionnalités](#fonctionnalités)
 - [Validation](#validation)
-- [Aperçu](#aperçu)
 - [Installation locale](#installation-locale)
-- [Crédits](#crédits)
 
 ---
 
@@ -59,20 +57,14 @@ Le code HTML et CSS a été entièrement validé via le **W3C Validator**, garan
 
 ---
 
-## 🖼️ Aperçu
-
-Il suffit d’ouvrir le fichier `index.html` dans un navigateur web.
-
----
-
 ## 🛠️ Installation locale
 
 Aucune installation particulière n’est requise. Il suffit d’ouvrir le fichier `index.html` dans un navigateur web.
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/ton-utilisateur/nom-du-repo.git
+git clone https://github.com/Thigre-Corp/simpsonsHTML.git
 
 # Ouvrir le fichier
-cd nom-du-repo
+cd simsonsHTML
 start index.html  # ou open index.html (Mac)
