@@ -63,17 +63,33 @@ article{
     text-align: left;
     font-size: 2em;
     padding: 0 0 0.5vw 1vw;
-    animation: 3s  infinite alternate TITRE;
+    animation: 3s ease-in-out infinite alternate TITRE;
     }
+}
     @keyframes TITRE{
         0%{
             margin-left : 0;
         }
-        50%{
-            margin-left : 50%;
+        15%{
+            margin-left : 20%;
+        }
+        30%{
+            margin-left : 0;
+        }
+        40%{
+            margin-left : 5%;
+        }
+        48%{
+            margin-left : 0;
+        }
+        52%{
+            margin-left : 2%;
+        }
+        55%{
+            margin-left : 0;
         }
     }
-}
+
 /**************************************************ASIDE/**************************************************/
 aside{
     display: flex;
