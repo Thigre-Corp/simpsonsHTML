@@ -1,0 +1,177 @@
+/**************************************************GENERAL/**************************************************/
+:root{
+    --yellow: rgb(224, 212, 36);
+    --lblue: #2A90EBff;
+    --blue: #1D64A3ff;
+    --white: #eeeeeeff;
+    --shadow:rgba(48, 45, 10, 0.644);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: verdana, sans-serif;
+}
+
+body{
+    background-color: var(--yellow);
+}
+#container {
+    width: 80%;
+    margin: auto;
+}
+/**************************************************end general/**************************************************/
+/**************************************************HEADER/**************************************************/
+header{
+    background-color: var(--lblue);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+   
+    }
+header>figure>img{
+    width: 100% ;
+    vertical-align: top;
+}
+/**************************************************MAIN/**************************************************/
+main {
+    display: flex; 
+    padding: 1vw ;
+    background-color: var(--white);
+
+}
+/**************************************************NAV/**************************************************/
+nav{
+    padding: 1vw;
+    background-color: var(--lblue);
+    height: fit-content;
+    li, a{
+        padding-bottom: 0.5vw;
+        text-align: center;
+        color: #eeeeeeff;
+        list-style-type: none;
+    }
+}
+/**************************************************ARTICLE/**************************************************/
+article{   
+    padding: 1vw;
+    h1 {
+    color: var(--yellow);
+    text-shadow: 0px 0px 2px var(--shadow);
+    text-align: left;
+    font-size: 2em;
+    padding: 0 0 0.5vw 1vw;
+    }
+    h1:hover{
+        font-size: 2.2em;
+        text-shadow: 0px 0px 5px var(--shadow);
+    }
+}
+/**************************************************ASIDE/**************************************************/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--lblue);
+    color: var(--white);
+    padding: 1vw;
+    figcaption{
+        font-weight: 800;
+        font-size: large;
+        padding: .5vw;
+    }
+}
+#matt{
+        max-width: 100%;
+        padding: auto;
+    }
+/**************************************************P/**************************************************/
+p {
+  text-align: justify;
+  padding: 1vh 1vw;
+}
+/**************************************************FOOTER/**************************************************/
+footer{
+    background-color: var(--blue);
+    text-align: center;
+    small{
+        color: var(--white);
+    }
+}
+/******* portables/**********************************************/
+@media screen and (max-width: 740px) {
+    nav>ul>li{
+        padding-bottom: 2vw;
+        a{
+            font-weight: bold;
+        }
+    }
+    main {
+       flex-direction: column;
+    }
+    #container{
+        width: 100%;
+    }
+    aside{
+        flex-direction: row;
+        align-items: center;
+        figure{
+            figcaption{
+                font-weight: 400;
+                font-size:medium; 
+            }
+        }    
+    }
+    img{
+        width: 30vw;
+        }
+}
+/******* tablettes/**********************************************/
+@media screen and (min-width: 741px) and (max-width: 1024px) {
+    nav>ul>li{
+        padding-bottom: 1vw;
+        a{
+            font-weight: bold;
+        }
+    }
+    main {
+       flex-direction: column;
+    }
+    #container{
+        width: 95%;
+    }
+    aside{
+        flex-direction: row;
+        align-items: center;
+        figure{
+            figcaption{
+                font-weight: 800;
+                font-size:large; 
+            }
+        }    
+    }
+    img{
+        width: 30vw;
+        }
+}
+
+
+
+
+/* 
+balise 1 point 
+classe 10 point 
+id 100 point 
+framework 1000 point 
+!important 10000 point */
+
+/* 
+unités de messures 
+
+vw et vh -> taille de l'écran 
+em -> taille de la police de caractère (16 px) défini dans le contenant
+rem ->  taille de la police choisir à la racine 
+px->  unité de mesure de netteté  */
